@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/295f140680.js" 
+        crossorigin="anonymous"></script>
+    <style>
+        /*hide testing element with the 'transparent' keyword for --testcolor.*/
+        :root {
+            --testcolor: transparent; 
+        }
+    </style>
+
+</head>
+
+<!--
+    TODO: header menuitems and the navcontainer under about section for interpreter and 
+    writer needs to be enabled when page construction is completed. They currently do 
+    not break the layout, but please be aware of it when making further changes if page
+    construction still not finished
+-->
+
+<body>
+    <header>
+        <div class="dropdown">
+            <a href="index.html#intro" class="menuheader">Home</a>
+        </div>
+
+        <div class="dropdown">
+            <a href="index.html#coding" class="menuheader">Developer</a>
+            <div class="menuitems">
+                <a href="page_resume.html">My Resume</a>
+                <a href="https://github.com/benhwlcode" target="_blank">My Github</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="index.html#about" class="menuheader">About</a>
+            <div class="menuitems">
+                <a href="page_interpreter.html" style="display: none;">Interpreter</a>
+                <a href="page_writer.html" style="display: none;">Writer</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <span class="menuheader">Theme</span>
+            <div class="menuitems">
+                <a href="#" onclick="changeToLight()">Light Theme</a>
+                <a href="#" onclick="changeToDark()">Dark Theme</a>
+            </div>
+        </div>
+
+        <div id="contactcard">
+            <a href="#" class="carditem">benhwliu.com</a>
+            <a href="#" class="carditem">ben.liu.hwl@gmail.com</a>
+            <div class="cardicons">
+                <a href="#">
+                    <i class="fa-regular fa-envelope fa-2x"></i></a>
+                <a href="https://github.com/benhwlcode" target="_blank">
+                    <i class="fa-brands fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/hsuan-wei-liu-7a87032a8" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>       
+        <div class="overlay"></div>     
+
+        <section class="container" id="intro">
+            <div class="main">
+            <h1>Ben Liu: a Developer's Website</h1>
+            <p>
+                Hello, my name is Hsuan Wei Liu, but you can call me Ben, and this is my
+                website. I am a self-taught programmer who is looking to break into the 
+                industry and become a full-stack developer.
+            </p>   
+            </div>         
+        </section>
+
+        <section class="container" id="coding">
+            <div class="main">
+                <div class="textcontainer">
+                    <h1>Software Development</h1>
+                    <p>
+                        I am a C# developer with a solid foundation in SQL, HTML5, CSS, 
+                        and object-oriented programming and other design principles. I 
+                        can make desktop apps, websites, create and connect to relational
+                        databases, and develop games in the Unity engine.
+                    </p>
+                    <ul>
+                        <li>Developed a Winforms application that is capable of mapping 
+                            and retrieving intricate OOP models to and from a relational 
+                            database</li>
+                        <li>Implemented a feature that allows users to build complex SQL 
+                            queries without expert knowledge</li>
+                        <li>Implemented features such as search and filter functions, 
+                            error checkers, data access to a SQL Server to save and load 
+                            information, and user authentication</li>
+                    </ul>
+                    <p>
+                        I have a passion for applying what I've learned and 
+                        self-improvement, and this website in particular is an ongoing 
+                        project for me to apply my web development skills and a way for 
+                        me to improve my knowledge of HTML5, CSS, and JavaScript.
+                    </p>
+                </div>  
+                <div class="navcontainer">
+                    <span class="button">
+                        <a href="page_resume.html">My Resume</a>
+                    </span>
+                    <span class="button">
+                        <a href="https://github.com/benhwlcode" target="_blank">My GitHub</a>
+                    </span>
+                </div>              
+            </div>            
+        </section>
+
+        <div class="banner" id="skills">
+            <div class="icon">
+                <img src="media/icon_csharp.svg.png" alt="">
+                <div class="label">C#</div>
+            </div>
+            <div class="icon">
+                <img src="media/icon_microsoftsql.png" alt="">
+                <div class="label">SQL</div>
+            </div>
+            <div class="icon">
+                <img src="media/icon_html5.svg.png" alt="">
+                <div class="label">HTML5</div>
+            </div>
+            <div class="icon">
+                <img src="media/icon_css.svg.png" alt="">
+                <div class="label">CSS</div>
+            </div>
+            <div class="icon">
+                <img src="media/icon_unity.png" alt="">
+                <div class="label">Unity</div>
+            </div>   
+        </div>
+
+        <section class="container" id="about">
+            <div class="main">
+                <div class="textcontainer">
+                    <h1>Interpreter</h1>
+                    <p>
+                        Before becoming a self-taught programmer, I was a professional 
+                        interpreter and translator fluent in English, Cantonese, and 
+                        Mandarin. I've helped many bridge and overcome the language barrier.
+                    </p>
+                    <p>
+                        With over five years of experience, I have serviced calls in 
+                        high-stress situations such as ongoing police responses and 
+                        medical emergencies, while also facilitating precise and 
+                        effective communication between client in various sectors such 
+                        as legal, medical, insurance, and goverment.
+                    </p>
+                </div>
+                <div class="navcontainer" style="display: none;">
+                    <span class="button">
+                        <a href="">Learn More</a>
+                    </span>
+                </div>
+            </div>
+            <div class="sub">
+                <div class="textcontainer">
+                    <h1>Hobbies</h1>
+                    <p>
+                        On the side, when I am not busy improving my coding, I enjoy 
+                        reading and creative writing.</p>
+                </div>
+                <div class="navcontainer" style="display: none;">
+                    <span class="button">
+                        <a href="">Learn More</a>
+                    </span>
+                </div>
+            </div>
+        </section>
+    
+        <section class="container" id="action">
+            <div class="main">
+                <div class="textcontainer">
+                    <h1>Want to Reach Out?</h1>
+                <p>
+                    If you like what you see and want to learn more about what I can do 
+                    for you, you can send me an email or visit any of my socials, you 
+                    can click on the buttons below.
+                </p>
+                <p>
+                    Thank for reading until the end. Cheers!
+                </p>              
+                </div>
+                <div class="navcontainer">
+                    <span class="button">
+                        <a href="">Send Email</a>
+                    </span>
+                    <span class="button">
+                        <a href="https://github.com/benhwlcode" target="_blank">
+                            GitHub</a>
+                    </span>
+                    <span class="button">
+                        <a href="https://www.linkedin.com/in/hsuan-wei-liu-7a87032a8" target="_blank">
+                            LinkedIn</a>
+                    </span>                    
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <section class="footnote">
+            <div class="linecontainer">
+                <p>Hsuan Wei Liu / Developer / ben.liu.hwl[at]gmail[dot]com</p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+
+
+</html>
