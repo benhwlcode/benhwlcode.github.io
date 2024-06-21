@@ -14,6 +14,8 @@
         root.style.setProperty('--fontshadow', 'white');
         root.style.setProperty('--themeshade', 'linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8))');
         root.style.setProperty('--themeblend', 'lighten'); 
+        root.style.setProperty('--shadowright', '2px 2px 5px black');
+        root.style.setProperty('--shadowleft', '-2px 2px 5px black');
 
 
     }
@@ -28,4 +30,6 @@
         root.style.setProperty('--fontshadow', 'black'); 
         root.style.setProperty('--themeshade', 'rgba(0, 0, 0, 0.8)'); 
         root.style.setProperty('--themeblend', 'mutiply'); 
+        root.style.setProperty('--shadowright', '2px 2px 5px white');
+        root.style.setProperty('--shadowleft', '-2px 2px 5px white');
     }

@@ -26,7 +26,7 @@
 
 <body>
     <header>
-        <div class="dropdown">
+        <div class="dropdown" id="home">
             <a href="index.html#intro" class="menuheader">Home</a>
         </div>
 
@@ -39,7 +39,7 @@
         </div>
 
         <div class="dropdown">
-            <a href="index.html#about" class="menuheader">About</a>
+            <a href="index.html#about" class="menuheader">About&nbsp;Me</a>
             <div class="menuitems">
                 <a href="page_interpreter.html" style="display: none;">Interpreter</a>
                 <a href="page_writer.html" style="display: none;">Writer</a>
@@ -49,22 +49,21 @@
         <div class="dropdown">
             <span class="menuheader">Theme</span>
             <div class="menuitems">
-                <a href="#" onclick="changeToLight()">Light Theme</a>
-                <a href="#" onclick="changeToDark()">Dark Theme</a>
+                <a onclick="changeToLight()">Light Theme</a>
+                <a onclick="changeToDark()">Dark Theme</a>
             </div>
         </div>
 
         <div id="contactcard">
-            <a href="#" class="carditem">benhwliu.com</a>
-            <a href="#" class="carditem">ben.liu.hwl@gmail.com</a>
-            <div class="cardicons">
+            <a href="http://benhwliu.com" target="_blank" ="carditem">benhwliu.com</a>
+            <span class="cardicons">
                 <a href="#">
-                    <i class="fa-regular fa-envelope fa-2x"></i></a>
+                    <i class="fa-regular fa-envelope "></i></a>
                 <a href="https://github.com/benhwlcode" target="_blank">
-                    <i class="fa-brands fa-github fa-2x"></i></a>
+                    <i class="fa-brands fa-github "></i></a>
                 <a href="https://www.linkedin.com/in/hsuan-wei-liu-7a87032a8" target="_blank">
-                    <i class="fa-brands fa-linkedin fa-2x"></i></a>
-            </div>
+                    <i class="fa-brands fa-linkedin "></i></a>
+                </span>
         </div>
     </header>
 
@@ -75,9 +74,8 @@
             <div class="main">
             <h1>Ben Liu: a Developer's Website</h1>
             <p>
-                Hello, my name is Hsuan Wei Liu, but you can call me Ben, and this is my
-                website. I am a self-taught programmer who is looking to break into the 
-                industry and become a full-stack developer.
+                Hello, my name is Ben, and this is my website. I am a self-taught programmer 
+                who is looking to break into the industry and become a full-stack developer.
             </p>   
             </div>         
         </section>
@@ -109,6 +107,30 @@
                         me to improve my knowledge of HTML5, CSS, and JavaScript.
                     </p>
                 </div>  
+
+                <div class="banner" id="skills">
+                    <div class="icon">
+                        <img src="media/icon_csharp.svg.png" alt="picture of the csharp icon">
+                        <div class="label">C#</div>
+                    </div>
+                    <div class="icon">
+                        <img src="media/icon_microsoftsql.png" alt="picture of the microsoft sql icon">
+                        <div class="label">SQL</div>
+                    </div>
+                    <div class="icon">
+                        <img src="media/icon_html5.svg.png" alt="picture of the html5 icon">
+                        <div class="label">HTML5</div>
+                    </div>
+                    <div class="icon">
+                        <img src="media/icon_css.svg.png" alt="picture of the css icon">
+                        <div class="label">CSS</div>
+                    </div>
+                    <div class="icon">
+                        <img src="media/icon_unity.png" alt="picture of the unity engine icon">
+                        <div class="label">Unity</div>
+                    </div>   
+                </div>
+
                 <div class="navcontainer">
                     <span class="button">
                         <a href="page_resume.html">My Resume</a>
@@ -119,34 +141,12 @@
                 </div>              
             </div>            
         </section>
-
-        <div class="banner" id="skills">
-            <div class="icon">
-                <img src="media/icon_csharp.svg.png" alt="picture of the csharp icon">
-                <div class="label">C#</div>
-            </div>
-            <div class="icon">
-                <img src="media/icon_microsoftsql.png" alt="picture of the microsoft sql icon">
-                <div class="label">SQL</div>
-            </div>
-            <div class="icon">
-                <img src="media/icon_html5.svg.png" alt="picture of the html5 icon">
-                <div class="label">HTML5</div>
-            </div>
-            <div class="icon">
-                <img src="media/icon_css.svg.png" alt="picture of the css icon">
-                <div class="label">CSS</div>
-            </div>
-            <div class="icon">
-                <img src="media/icon_unity.png" alt="picture of the unity engine icon">
-                <div class="label">Unity</div>
-            </div>   
-        </div>
+        
 
         <section class="container" id="about">
             <div class="main">
                 <div class="textcontainer">
-                    <h1>Interpreter</h1>
+                    <h1>Professional Interpreter</h1>
                     <p>
                         Before becoming a self-taught programmer, I was a professional 
                         interpreter and translator fluent in English, Cantonese, and 
@@ -166,9 +166,9 @@
                     </span>
                 </div>
             </div>
-            <div class="sub">
+            <div class="main">
                 <div class="textcontainer">
-                    <h1>Hobbies</h1>
+                    <h1>Creative Writer</h1>
                     <p>
                         On the side, when I am not busy improving my coding, I enjoy 
                         reading and creative writing.</p>
@@ -189,34 +189,26 @@
                     If you like what you see and want to learn more about what I can do 
                     for you, you can send me an email or visit any of my socials, you 
                     can click on the buttons below.
-                </p>
-                <p>
-                    Thank for reading until the end. Cheers!
-                </p>              
+                </p>          
                 </div>
                 <div class="navcontainer">
-                    <span class="button">
-                        <a href="">Send Email</a>
-                    </span>
-                    <span class="button">
-                        <a href="https://github.com/benhwlcode" target="_blank">
-                            GitHub</a>
-                    </span>
-                    <span class="button">
-                        <a href="https://www.linkedin.com/in/hsuan-wei-liu-7a87032a8" target="_blank">
-                            LinkedIn</a>
-                    </span>                    
+                    <a class="button">
+                        Send Email</a>
+                    <a class="button"
+                        href="https://github.com/benhwlcode" target="_blank" >
+                        GitHub</a>
+                    <a class="button"
+                        href="https://www.linkedin.com/in/hsuan-wei-liu-7a87032a8" target="_blank">
+                        LinkedIn</a>
+              
                 </div>
             </div>
         </section>
-
-
     </main>
-
     <footer>
         <section class="footnote">
             <div class="linecontainer">
-                <p>Hsuan Wei Liu / Developer / ben.liu.hwl[at]gmail[dot]com</p>
+                <p>Hsuan Wei Liu / Developer / ben.liu.hwl@gmail.com</p>
             </div>
         </section>
     </footer>

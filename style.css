@@ -1,21 +1,21 @@
 :root{
 
-    --themeshade: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-    --themeblend: lighten;
+    --themeshade: rgba(0, 0, 0, 0.8);
+    --themeblend: mutiply;
     --themefilter: brightness(120%);
 
-    --headerbgc: royalblue;
+    --headerbgc: skyblue;
     --menubgc: lightgray;
     --buttonbgc: gold;
 
     --maintextsize: 14pt;
     --subtextsize: 12pt;
 
-    --fontcolor:black;
-    --fontshadow: white;
+    --fontcolor:lightgrey;
+    --fontshadow: black;
 
-    --shadowright: 2px 2px 5px black;
-    --shadowleft: -2px 2px 5px black;  
+    --shadowright: 2px 2px 5px white;
+    --shadowleft: -22px 2px 5px white;  
     
     --headerheight: 36pt;
 
@@ -60,7 +60,8 @@ header{
     }
 
     .menuheader{
-        padding-right: 10px;
+        padding-left:10px;
+        padding-right: 20px;
         padding-top: 100%;
         display: inline-block;
         font-size: var(--subtextsize); 
@@ -90,6 +91,7 @@ header{
 }
 
 .dropdown a:hover{
+    cursor: pointer;
     filter: var(--themefilter);
 }
 
@@ -104,27 +106,19 @@ header{
 
     border: 2px solid black;
 
-    .cardicons{
-        display:none;
-        background-color: var(--menubgc);
-    }
-
     i{
-        background-color: var(--menubgc);
-
+        background-color: var(--headergc);
     }
 
     
 }
 
-#contactcard:hover .cardicons{
-    display: inline-block;
-    box-shadow: var(--shadowleft);
-
+#contactcard a:hover i{
+    background-color: white;
 }
 
-#contactcard a:hover i{
-    filter: var(--themefilter);
+#home a{
+    padding-left: 10px;
 }
 
 
@@ -193,12 +187,6 @@ main{
     background-position: right;
 }
 
-#skills{
-    grid-area:skills;
-
-    background-color: beige;
-}
-
 #about{
     grid-area: about;
 
@@ -213,7 +201,6 @@ main{
     background-color: chartreuse;
 
     background-image: url(media/background_shake.png);
-    background-size: 100% auto;
 }
 
 .container{
@@ -276,7 +263,7 @@ main{
     justify-content: space-evenly;
     flex-wrap: wrap;
 
-
+    margin: 40px 0px;
 
     .icon{
 
@@ -284,10 +271,8 @@ main{
 
         img{
             align-self: center;
-            width: var(--iconscale); 
-            height: var(--iconscale); 
-            min-width: var(--iconsize); 
-            min-height: var(--iconsize);
+            width: var(--iconsize); 
+            height: var(--iconsize);
         }
         .label{
             text-align: center;
@@ -296,12 +281,16 @@ main{
 }
 
 footer{
+    display: flex;
     position: relative;
+    width: 100%;
+    height: var(--headerheight);
     background-color: var(--headerbgc);
     color: black;
-    font-weight: bold;
+    padding-left: 20px;
+
     z-index: 2;
-    padding: 10px 0;
+
 }
 
 .overlay{
