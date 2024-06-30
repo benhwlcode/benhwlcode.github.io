@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben's Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">    
     <script src="https://kit.fontawesome.com/295f140680.js" 
         crossorigin="anonymous"></script>
     <style>
@@ -26,45 +25,7 @@
 
 <body>
     <header>
-        <div class="dropdown" id="home">
-            <a href="index.html#intro" class="menuheader">Home</a>
-        </div>
-
-        <div class="dropdown">
-            <a href="index.html#coding" class="menuheader">Developer</a>
-            <div class="menuitems">
-                <a href="page_resume.html">My Resume</a>
-                <a href="https://github.com/benhwlcode" target="_blank">My Github</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <a href="index.html#about" class="menuheader">About&nbsp;Me</a>
-            <div class="menuitems">
-                <a href="page_interpreter.html" style="display: none;">Interpreter</a>
-                <a href="page_writer.html" style="display: none;">Writer</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <span class="menuheader">Theme</span>
-            <div class="menuitems">
-                <a onclick="changeToLight()">Light Theme</a>
-                <a onclick="changeToDark()">Dark Theme</a>
-            </div>
-        </div>
-
-        <div id="contactcard">
-            <a href="http://benhwliu.com" target="_blank" ="carditem">benhwliu.com</a>
-            <span class="cardicons">
-                <a href="#">
-                    <i class="fa-regular fa-envelope "></i></a>
-                <a href="https://github.com/benhwlcode" target="_blank">
-                    <i class="fa-brands fa-github "></i></a>
-                <a href="https://www.linkedin.com/in/hsuan-wei-liu-7a87032a8" target="_blank">
-                    <i class="fa-brands fa-linkedin "></i></a>
-                </span>
-        </div>
+        <div id="header"></div>        
     </header>
 
     <main>       
@@ -118,6 +79,10 @@
                         <div class="label">SQL</div>
                     </div>
                     <div class="icon">
+                        <img src="media/icon_unity.png" alt="picture of the unity engine icon">
+                        <div class="label">Unity</div>
+                    </div>  
+                    <div class="icon">
                         <img src="media/icon_html5.svg.png" alt="picture of the html5 icon">
                         <div class="label">HTML5</div>
                     </div>
@@ -126,24 +91,27 @@
                         <div class="label">CSS</div>
                     </div>
                     <div class="icon">
-                        <img src="media/icon_unity.png" alt="picture of the unity engine icon">
-                        <div class="label">Unity</div>
+                        <img src="media/icon_javascript.png" alt="picture of the javascript icon">
+                        <div class="label">JavaScript</div>
                     </div>   
                 </div>
 
                 <div class="navcontainer">
-                    <span class="button">
-                        <a href="page_resume.html">My Resume</a>
-                    </span>
-                    <span class="button">
-                        <a href="https://github.com/benhwlcode" target="_blank">My GitHub</a>
-                    </span>
+                    <a class="button"
+                        href="page_resume.html">
+                        My Resume
+                    <a>
+                    <a class="button"
+                        href="https://github.com/benhwlcode" target="_blank">
+                        My GitHub
+                    <a>
                 </div>              
             </div>            
         </section>
         
 
         <section class="container" id="about">
+            
             <div class="main">
                 <div class="textcontainer">
                     <h1>Professional Interpreter</h1>
@@ -160,25 +128,32 @@
                         as legal, medical, insurance, and goverment.
                     </p>
                 </div>
-                <div class="navcontainer" style="display: none;">
-                    <span class="button">
-                        <a href="">Learn More</a>
-                    </span>
+
+                <div class="navcontainer">
+                    <a class="button"
+                        href="" target="" style="display:none">
+                        Learn More
+                    <a>
                 </div>
             </div>
+            
             <div class="main">
                 <div class="textcontainer">
                     <h1>Creative Writer</h1>
                     <p>
                         On the side, when I am not busy improving my coding, I enjoy 
-                        reading and creative writing.</p>
+                        reading and creative writing.
+                    </p>
                 </div>
-                <div class="navcontainer" style="display: none;">
-                    <span class="button">
-                        <a href="">Learn More</a>
-                    </span>
+                
+                <div class="navcontainer">
+                    <a class="button"
+                        href="" target="" style="display:none">
+                        Learn More
+                    <a>
                 </div>
             </div>
+
         </section>
     
         <section class="container" id="action">
@@ -192,7 +167,8 @@
                 </p>          
                 </div>
                 <div class="navcontainer">
-                    <a class="button">
+                    <a class="button"
+                        href="mailto:ben.liu.hwl@gmail.com">
                         Send Email</a>
                     <a class="button"
                         href="https://github.com/benhwlcode" target="_blank" >
@@ -205,13 +181,14 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <section class="footnote">
             <div class="linecontainer">
                 <p>Hsuan Wei Liu / Developer / ben.liu.hwl@gmail.com</p>
             </div>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 

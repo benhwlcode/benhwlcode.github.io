@@ -5,51 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/295f140680.js" 
         crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="dropdown">
-            <a href="index.html#intro" class="menuheader">Home</a>
-        </div>
-
-        <div class="dropdown">
-            <a href="index.html#coding" class="menuheader">Developer</a>
-            <div class="menuitems">
-                <a href="page_resume.html">My Resume</a>
-                <a href="https://github.com/benhwlcode" target="_blank">My Github</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <a href="index.html#about" class="menuheader">About</a>
-            <div class="menuitems">
-                <a href="page_interpreter.html" style="display: none;">Interpreter</a>
-                <a href="page_writer.html" style="display: none;">Writer</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <span class="menuheader">Theme</span>
-            <div class="menuitems">
-                <a href="#" onclick="changeToLight()">Light Theme</a>
-                <a href="#" onclick="changeToDark()">Dark Theme</a>
-            </div>
-        </div>
-
-        <div id="contactcard">
-            <a href="#" class="carditem">benhwliu.com</a>
-            <div class="cardicons">
-                <a href="#">
-                    <i class="fa-regular fa-envelope"></i></a>
-                <a href="https://github.com/benhwlcode" target="_blank">
-                    <i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/hsuan-wei-liu-7a87032a8" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
+    <header id="header">
+        
     </header>
 
     <main>
@@ -59,13 +20,13 @@
             <div class="main">
             <ul style="list-style: none;">
                 <li style="font-size: larger;">Ben Liu</li>
-                <li style="margin: 10px 0;">ben.liu.hwl@gmail.com</li>
+                <li style="margin: 10px auto;">ben.liu.hwl@gmail.com</li>
                 <li>github.com/benhwlcode</li>
             </ul> 
             </div>         
         </section>
         <section class="container" id="odd_container">
-            <span style="z-index: 1;">SKILLS</span> <br>
+            <span style="z-index: 1; padding-top: 20px;">SKILLS</span> <br>
             <hr style="z-index: 1; margin-left: 20px;">
             <div class="main">
                 <div class="listcontainer">
@@ -90,7 +51,7 @@
             </div>
         </section>
         <section class="container" id="even_container">
-            <span style="z-index: 1;">EXPERIENCE</span> <br>
+            <span style="z-index: 1; padding-top: 20px;">EXPERIENCE</span> <br>
             <hr style="z-index: 1; margin-left: 20px;">            
             <div class="main">
                 <div class="listcontainer">
@@ -114,7 +75,7 @@
             </div>
         </section>
         <section class="container" id="odd_container">
-            <span style="z-index: 1;">PROJECTS</span> <br>
+            <span style="z-index: 1; padding-top: 20px;">PROJECTS</span> <br>
             <hr style="z-index: 1; margin-left: 20px;">
             <div class="main">
                 <div class="listcontainer">
@@ -142,5 +103,7 @@
             </div>
         </section>        
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

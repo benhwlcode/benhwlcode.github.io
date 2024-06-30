@@ -17,7 +17,7 @@
     --shadowright: 2px 2px 5px white;
     --shadowleft: -22px 2px 5px white;  
     
-    --headerheight: 36pt;
+    --headerheight: 50pt;
 
     --mainwidth: calc(100vw*(2/3));
     --subwidth: 200px;
@@ -40,9 +40,24 @@ body{
 }
 
 header{
+
     display: flex;
     position: fixed;
+    height: var(--headerheight);
+
+    display: flex;
+    justify-content: center;
+
     width: 100%;
+
+    background-color: var(--headerbgc);
+    z-index: 2;
+}
+
+#header{
+    display: flex;
+    overflow: hidden;
+
     height: var(--headerheight);
     background-color: var(--headerbgc);
     color: black;
@@ -51,6 +66,8 @@ header{
 }
 
 .dropdown{
+
+
     display: inline-block;
     overflow: hidden;
     align-self: flex-end;
@@ -63,6 +80,7 @@ header{
         padding-left:10px;
         padding-right: 20px;
         padding-top: 100%;
+        padding-bottom: 10px;
         display: inline-block;
         font-size: var(--subtextsize); 
     }
@@ -70,9 +88,10 @@ header{
     .menuitems{
         display: none;
         position: absolute;
-        font-size: var(--maintextsize);
+        font-size: var(--maintextsize);        
         a{
             background-color: var(--menubgc);
+            padding: 20px 20px 10px 10px;
         }
     }
 }
@@ -106,15 +125,22 @@ header{
 
     border: 2px solid black;
 
-    i{
-        background-color: var(--headergc);
+    .cardicons{
+        display: flex;
+        background-color: var(--headerbgc);
+        justify-content: space-evenly;
+
+        i{
+            margin: 0 4px;
+        }
     }
 
     
 }
 
 #contactcard a:hover i{
-    background-color: white;
+    background-color: var(--headerbgc);
+    filter: var(--themefilter);
 }
 
 #home a{
@@ -127,13 +153,15 @@ main{
     grid-template-areas:
         "intro" 
         "coding" 
-        "skills" 
         "about" 
         "action"; 
 
     > *{
 
-        padding: 4vw 4vw;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        height: 100%;
         
         background-repeat: no-repeat;
         background-position: center;
@@ -150,6 +178,7 @@ main{
         -2px 2px 0 var(--fontshadow),
         2px 2px 0 var(--fontshadow); 
     }
+
 }
 
 #intro{
@@ -206,7 +235,8 @@ main{
 .container{
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;   
+    
     
     h1, p, li{
         max-width: 500px;
@@ -236,10 +266,8 @@ main{
 .navcontainer{
     display: block;
     text-align: right;
-    margin: auto auto 0 auto;
+    margin: auto auto 20px auto;
     max-width: 500px;
-
-    padding-top: 20px;
 
 
     .button{
@@ -265,9 +293,13 @@ main{
 
     margin: 40px 0px;
 
+    max-width: 500px;
+    align-self: center;
+
     .icon{
 
         z-index: 1;
+        margin-bottom: 10px;
 
         img{
             align-self: center;
@@ -287,9 +319,15 @@ footer{
     height: var(--headerheight);
     background-color: var(--headerbgc);
     color: black;
-    padding-left: 20px;
+
+    justify-content: center;
 
     z-index: 2;
+
+    p{
+        padding-left: 10px;
+        align-self: center;
+    }
 
 }
 
@@ -302,6 +340,11 @@ footer{
     background: var(--themeshade);
     mix-blend-mode: var(--themeblend); 
     z-index: 0;
+}
+
+p, li{
+
+    line-height: 2;
 }
 
 
