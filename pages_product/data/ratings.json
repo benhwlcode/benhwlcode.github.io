@@ -1,0 +1,7 @@
+[
+  { "rating": "one", "point": 1, "count": 10 },
+  { "rating": "two", "point": 2, "count": 5 },
+  { "rating": "three", "point": 3, "count": 20 },
+  { "rating": "four", "point": 4, "count": 120 },
+  { "rating": "five", "point": 5, "count": 200 }
+]

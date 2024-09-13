@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Jane Doe",
+    "desc": "Title at Org",
+    "review": "The service is stellar and products are perfect.",
+    "image": "none"
+  },
+  {
+    "name": "John Smith",
+    "desc": "Title at Org",
+    "review": "If a testimonial has an image, we will use it.",
+    "image": "media/smith-image.jpg"
+  },
+  {
+    "name": "Adam Co.",
+    "desc": "Leading Org in Industry",
+    "review": "If not, we provide a custom one using their initials.",
+    "image": "none"
+  }
+]

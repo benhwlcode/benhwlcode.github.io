@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Promotion One",
+    "isActive": true,
+    "desc": "This promotion is currently active and will be displayed in the promotions section."
+  },
+  {
+    "title": "Promotion Two",
+    "isActive": true,
+    "desc": "We can determine whether a promotion is active or not through many means, but for simplicity, we will simply have the json object hold a property with a true/false value."
+  },
+  {
+    "title": "Promotion Three",
+    "isActive": false,
+    "desc": "This promotion is currently inactive."
+  },
+  {
+    "title": "Promotion Four",
+    "isActive": true,
+    "desc": "Since promotion three has a false value, it is not shown, and we skipped over it to place in this current one."
+  }
+]

@@ -1,0 +1,6 @@
+Header 1
+The first paragraph for the Teach essay page. This is a placeholder for demo purposes.
+Header 2
+The second paragraph for the Teach essay page. This is a placeholder for demo purposes.
+Header 3
+The last paragraph for the Teach essay page. This is a placeholder for demo purposes.

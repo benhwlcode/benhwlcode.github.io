@@ -1,0 +1,32 @@
+[
+  {
+    "plan": "Plan One",
+    "price": 9.99,
+    "duration": 6,
+    "extra": 0,
+    "content": ["Boxes!", 6, false],
+    "isPromoted": false,
+    "image": "media/plan1-image.jpg",
+    "alt": "a one by one grey block"
+  },
+  {
+    "plan": "Plan Two",
+    "price": 19.99,
+    "duration": 12,
+    "extra": 2,
+    "content": ["More Boxes!", 21, true],
+    "isPromoted": true,
+    "image": "media/plan2-image.jpg",
+    "alt": "a one by one grey block"
+  },
+  {
+    "plan": "Plan Three",
+    "price": 39.99,
+    "duration": 24,
+    "extra": 4,
+    "content": ["Many Boxes!", 42, true],
+    "isPromoted": false,
+    "image": "media/plan3-image.jpg",
+    "alt": "a one by one grey block"
+  }
+]

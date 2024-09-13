@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Product One",
+    "image": "media/prod1-image.jpg",
+    "originalPrice": "9.99",
+    "isDiscounted": false,
+    "discountedPrice": "9.99"
+  },
+  {
+    "name": "Product Two",
+    "image": "media/prod1-image.jpg",
+    "originalPrice": "9.99",
+    "isDiscounted": false,
+    "discountedPrice": "9.99"
+  },
+  {
+    "name": "Product Three",
+    "image": "media/prod1-image.jpg",
+    "originalPrice": "9.99",
+    "isDiscounted": false,
+    "discountedPrice": "9.99"
+  },
+  {
+    "name": "Product Four",
+    "image": "media/prod1-image.jpg",
+    "originalPrice": "9.99",
+    "isDiscounted": true,
+    "discountedPrice": "4.99"
+  }
+]

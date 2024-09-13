@@ -1,0 +1,6 @@
+[
+  { "feature": "Premium One", "isPremium": true },
+  { "feature": "Premium Two", "isPremium": true },
+  { "feature": "Service One", "isPremium": false },
+  { "feature": "Service Two", "isPremium": false }
+]

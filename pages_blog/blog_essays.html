@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Learning Blog Essays - Ben Liu's Portfolio</title>
+    <meta
+      name="description"
+      content="Individual programming essays about learning the craft for Ben Liu's demo blogging website."
+    />
+    <meta property="og:title" content="Learning Blog - Ben Liu's Portfolio" />
+    <meta
+      property="og:description"
+      content="Individual programming essays about learning the craft for Ben Liu's demo blogging website."
+    />
+
+    <meta
+      property="og:url"
+      content="https://benhwliu.com/pages_blog/blog_index.html"
+    />
+    <link
+      rel="canonical"
+      href="https://benhwliu.com/pages_blog/blog_index.html"
+    />
+    <meta
+      property="og:image"
+      content="https://benhwliu.com/pages_blog/media/hero_banner_card.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Scrabble pieces spelling out the word 'blog'."
+    />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="appsite/site.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="blog_index.html">Home</a></li>
+          <li><a href="blog_overview.html">Overview</a></li>
+          <li>
+            <div class="dropdown">
+              <div class="dropdown-hover">Essays</div>
+              <div class="dropdown-content">
+                <a href="blog_essays.html?item=1">Featured #1</a>
+                <a href="blog_essays.html?item=2">Featured #2</a>
+                <a href="blog_essays.html?item=3">Featured #3</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="essay-main">
+      <h2 id="essay-header">Welcome to My Blog</h2>
+      <img
+        id="essay-image"
+        src="media/hero_banner.jpg"
+        alt="A person sitting in front of a desk writing on a notebook."
+      />
+      <div id="styling-text" class="essay-text">
+        <h3 class="placeholder-text">About</h3>
+        <p class="placeholder-text">
+          Welcome to my blog. This is where I write about my humble experiences
+          with learning programming. If you want to check out my essays, you can
+          simply click on Overview or hover over Essays at the top right.
+        </p>
+      </div>
+    </main>
+    <footer>&copy; <span id="copyright-year"></span> by Ben Liu</footer>
+    <script src="appsite/app.js"></script>
+    <script>
+      app.essays();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Learning",
+    "imageBanner": "media/learn_banner.jpg",
+    "imageCard": "media/learn_card.jpg",
+    "imageAlt": "A picture of scrabble pieces spelling out 'learn'.",
+    "textFile": "learn.txt",
+    "listTitle": "More Projects",
+    "listItems": [
+      "https://github.com/benhwlcode/WelfareApp",
+      "../pages_product/product_index.html"
+    ]
+  },
+  {
+    "title": "Teaching",
+    "imageBanner": "media/teach_banner.jpg",
+    "imageCard": "media/teach_card.jpg",
+    "imageAlt": "A picture of scrabble pieces spelling out 'teach'.",
+    "textFile": "teach.txt",
+    "listTitle": "More Projects",
+    "listItems": [
+      "https://github.com/benhwlcode/WelfareApp",
+      "../pages_product/product_index.html"
+    ]
+  },
+  {
+    "title": "Supporting",
+    "imageBanner": "media/support_banner.jpg",
+    "imageCard": "media/support_card.jpg",
+    "imageAlt": "A picture of scrabble pieces spelling out 'support'.",
+    "textFile": "support.txt",
+    "listTitle": "More Projects",
+    "listItems": [
+      "https://github.com/benhwlcode/WelfareApp",
+      "../pages_product/product_index.html"
+    ]
+  }
+]

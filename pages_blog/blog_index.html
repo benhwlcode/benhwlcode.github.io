@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Learning Blog Index - Ben Liu's Portfolio</title>
+    <meta
+      name="description"
+      content="A demo blogging website for Ben Liu's portfolio, including programming essays and contact information."
+    />
+    <meta property="og:title" content="Learning Blog - Ben Liu's Portfolio" />
+    <meta
+      property="og:description"
+      content="A demo blogging website for Ben Liu's portfolio, including programming essays and contact information."
+    />
+
+    <meta
+      property="og:url"
+      content="https://benhwliu.com/pages_blog/blog_index.html"
+    />
+    <link
+      rel="canonical"
+      href="https://benhwliu.com/pages_blog/blog_index.html"
+    />
+    <meta
+      property="og:image"
+      content="https://benhwliu.com/pages_blog/media/blog_card.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Scrabble pieces spelling out the word 'blog'."
+    />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="appsite/site.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="hero">
+        <h1>Writing About Learning Programming</h1>
+        <img
+          src="media/hero_banner.jpg"
+          alt="A person sitting in front of a desk writing on a notebook."
+        />
+      </div>
+      <div id="my-story">
+        <h2>This is why I write.</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sed
+          ipsam recusandae aut eos molestiae neque possimus perferendis. Amet
+          voluptatem consequuntur perspiciatis ducimus ullam aut iure labore
+          blanditiis? Ad, ab.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+          officiis, ducimus soluta nulla ad repellat ut quam delectus
+          voluptatibus dolor.
+        </p>
+      </div>
+      <div id="essays-section">
+        <div>
+          <h2>Here are the essays so far!</h2>
+          <a href="blog_overview.html">read more</a>
+        </div>
+        <img
+          src="media/blog_banner.jpg"
+          alt="A picture of scrabble pieces spelling out 'blog'."
+        />
+      </div>
+      <div id="contact-me">
+        <h2>Want to provide essay suggestions?</h2>
+        <form id="contact-form" action="" method="post">
+          <label for="name">Name: </label>
+          <input id="name" type="text" name="name" required />
+          <label for="email">Email: </label>
+          <input id="email" type="email" name="email" required />
+          <label for="message">Message: </label>
+          <textarea
+            id="message"
+            type="text"
+            name="message"
+            row="5"
+            required
+          ></textarea>
+          <div>
+            <button type="submit">Send Suggestion</button>
+            <button type="reset">Clear Form</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>&copy; <span id="copyright-year"></span> by Ben Liu</footer>
+    <script src="appsite/app.js"></script>
+    <script>
+      app.index();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+Header: off-canvas menu
+
+Hero: image text blocks
+
+Current Projects: accordian or collapsible
+
+Portfolio Items: portfolio gallery
+
+Testimonials: meet the team / cards or testimonials
+
+About Me: image with transparent text
+
+Comparison: comparison table
+
+Pricing: pricing table
+
+User rating: user rating
+
+Get Free Quote: newsletter
+
+Message Me: popup chat window or popup form
+
+Socials: flex footer
+
+Footer: copyright

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Learning Blog Overview - Ben Liu's Portfolio</title>
+    <meta
+      name="description"
+      content="The overview page for Ben Liu's demo blogging website of programming essays."
+    />
+    <meta property="og:title" content="Learning Blog - Ben Liu's Portfolio" />
+    <meta
+      property="og:description"
+      content="The overview page for Ben Liu's demo blogging website of programming essays."
+    />
+
+    <meta
+      property="og:url"
+      content="https://benhwliu.com/pages_blog/blog_index.html"
+    />
+    <link
+      rel="canonical"
+      href="https://benhwliu.com/pages_blog/blog_index.html"
+    />
+    <meta
+      property="og:image"
+      content="https://benhwliu.com/pages_blog/media/hero_banner_card.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Scrabble pieces spelling out the word 'blog'."
+    />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="appsite/site.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="blog_index.html">Home</a></li>
+          <li><a href="blog_overview.html">Overview</a></li>
+          <li>
+            <div class="dropdown">
+              <div class="dropdown-hover">Essays</div>
+              <div class="dropdown-content">
+                <a href="blog_essays.html?item=1">Featured #1</a>
+                <a href="blog_essays.html?item=2">Featured #2</a>
+                <a href="blog_essays.html?item=3">Featured #3</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="overview-main">
+      <div class="highlight">
+        <div>
+          <h2>01. Learning</h2>
+          <a href="blog_essays.html?item=1">see more</a>
+        </div>
+        <img
+          src="media/learn_card.jpg"
+          alt="A picture of scrabble pieces spelling out 'learn'."
+        />
+      </div>
+      <div class="highlight invert">
+        <div>
+          <h2>02. Teaching</h2>
+          <a href="blog_essays.html?item=2">see more</a>
+        </div>
+        <img
+          src="media/teach_card.jpg"
+          alt="A picture of scrabble pieces spelling out 'teach'."
+        />
+      </div>
+      <div class="highlight">
+        <div>
+          <h2>03. Supporting</h2>
+          <a href="blog_essays.html?item=3">see more</a>
+        </div>
+        <img
+          src="media/support_card.jpg"
+          alt="A picture of scrabble pieces spelling out 'support'."
+        />
+      </div>
+    </main>
+    <footer>&copy; <span id="copyright-year"></span> by Ben Liu</footer>
+    <script src="appsite/app.js"></script>
+    <script>
+      app.overview();
+    </script>
+  </body>
+</html>
