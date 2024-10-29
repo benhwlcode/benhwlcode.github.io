@@ -1,32 +1,19 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ben Liu's Personal Website</title>
-    <link rel="stylesheet" href="style.css">    
-    <meta
-      name="description"
-      content="Ben Liu's Personal Website"
-    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Ben Liu's Personal Website" />
     <meta property="og:title" content="Ben Liu's Personal Website" />
     <meta
       property="og:description"
-      content="Ben Liu's personal website with portfolio content, including two demo web pages, resume, and links to socials."
+      content="Ben Liu's personal website with portfolio content, including projects, resume, and links to socials."
     />
 
-    <meta
-      property="og:url"
-      content="https://benhwliu.com/index.html"
-    />
-    <link
-      rel="canonical"
-      href="https://benhwliu.com/index.html"
-    />
-    <meta
-      property="og:image"
-      content="https://benhwliu.com/media/background_programmer.png"
-    />
+    <meta property="og:url" content="https://benhwliu.com/index.html" />
+    <link rel="canonical" href="https://benhwliu.com/index.html" />
+    <meta property="og:image" content="https://benhwliu.com/favicon.ico" />
     <meta
       property="og:image:alt"
       content="A cartoon drawing of a programmer holding a laptop."
@@ -37,202 +24,158 @@
     <meta property="twitter:card" content="summary_large_image" />
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <script src="https://kit.fontawesome.com/295f140680.js" 
-        crossorigin="anonymous"></script>
-    <style>
-        /*hide testing element with the 'transparent' keyword for --testcolor.*/
-        :root {
-            --testcolor: transparent; 
-        }
-    </style>
-
-</head>
-
-<!--
-    TODO: header menuitems and the navcontainer under about section for interpreter and 
-    writer needs to be enabled when page construction is completed. They currently do 
-    not break the layout, but please be aware of it when making further changes if page
-    construction still not finished
--->
-
-<body>
+    <script
+      src="https://kit.fontawesome.com/295f140680.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <div id="header"></div>        
+      <nav id="header-nav">
+        <div id="socials">
+          <a href="https://github.com/benhwlcode">GitHub</a>
+          <a href="https://www.linkedin.com/in/hsuan-wei-liu-7a87032a8">
+            LinkedIn
+          </a>
+          <a href="mailto:ben.liu.hwl@gmail.com">Email Me</a>
+        </div>
+        <div id="repos">
+          <div id="repo-header">Repos</div>
+          <div id="repo-links">
+            <a href="https://github.com/benhwlcode/HololiveConcertApiApp"
+              >Concert&nbsp;Web&nbsp;Api</a
+            >
+            <a href="https://github.com/benhwlcode/HololiveConcertBlazorApp"
+              >Concert&nbsp;Blazor&nbsp;App</a
+            >
+            <a href="https://github.com/benhwlcode/WelfareApp"
+              >Welfare&nbsp;Winforms&nbsp;App</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
-
-    <main>       
-        <div class="overlay"></div>     
-
-        <section class="container" id="intro">
-            <div class="main">
-            <h1>Ben Liu: a Developer's Website</h1>
-            <p>
-                Hello, my name is Ben, and this is my website. I am a self-taught programmer 
-                who is looking to break into the industry and become a full-stack developer.
-            </p>   
-            <h2>Check Out My Projects</h2>
-            <p class="demo-a">
-                <a href="pages_blog/blog_index.html">Blog&nbsp;Site&nbsp;Demo</a>
-            </p>
-            <p class="demo-a">
-                <a href="pages_product/product_index.html">Product&nbsp;and&nbsp;Data&nbsp;Demo</a>
-            </p>
-            <p class="demo-a">
-                <a href="https://github.com/benhwlcode/WelfareApp">Welfare&nbsp;App</a>
-            </p>
-            </div>         
-        </section>
-
-        <section class="container" id="coding">
-            <div class="main">
-                <div class="textcontainer">
-                    <h1>Software Development</h1>
-                    <p>
-                        I am a C# developer with a solid foundation in SQL, HTML5, CSS, JavaScript
-                        and object-oriented programming and other design principles. I 
-                        can make desktop apps, websites, create and connect to relational
-                        databases, and develop games in the Unity engine.
-                    </p>
-                    <ul>
-                        <li>Developed a Winforms application that is capable of mapping 
-                            and retrieving intricate OOP models to and from a relational 
-                            database</li>
-                        <li>Implemented a feature that allows users to build complex SQL 
-                            queries without expert knowledge</li>
-                        <li>Implemented features such as search and filter functions, 
-                            error checkers, data access to a SQL Server to save and load 
-                            information, and user authentication</li>
-                    </ul>
-                    <p>
-                        I have a passion for applying what I've learned and 
-                        self-improvement, and this website in particular is an ongoing 
-                        project for me to apply my web development skills and a way for 
-                        me to improve my knowledge of HTML5, CSS, and JavaScript.
-                    </p>
-                </div>  
-
-                <div class="banner" id="skills">
-                    <div class="icon">
-                        <img src="media/icon_csharp.svg.png" alt="picture of the csharp icon">
-                        <div class="label">C#</div>
-                    </div>
-                    <div class="icon">
-                        <img src="media/icon_microsoftsql.png" alt="picture of the microsoft sql icon">
-                        <div class="label">SQL</div>
-                    </div>
-                    <div class="icon">
-                        <img src="media/icon_unity.png" alt="picture of the unity engine icon">
-                        <div class="label">Unity</div>
-                    </div>  
-                    <div class="icon">
-                        <img src="media/icon_html5.svg.png" alt="picture of the html5 icon">
-                        <div class="label">HTML5</div>
-                    </div>
-                    <div class="icon">
-                        <img src="media/icon_css.svg.png" alt="picture of the css icon">
-                        <div class="label">CSS</div>
-                    </div>
-                    <div class="icon">
-                        <img src="media/icon_javascript.png" alt="picture of the javascript icon">
-                        <div class="label">JavaScript</div>
-                    </div>   
-                </div>
-
-                <div class="navcontainer">
-                    <a class="button"
-                        href="page_resume.html">
-                        My Resume
-                    <a>
-                    <a class="button"
-                        href="https://github.com/benhwlcode" target="_blank">
-                        My GitHub
-                    <a>
-                </div>              
-            </div>            
-        </section>
-        
-
-        <section class="container" id="about">
-            
-            <div class="main">
-                <div class="textcontainer">
-                    <h1>Professional Interpreter</h1>
-                    <p>
-                        Before becoming a self-taught programmer, I was a professional 
-                        interpreter and translator fluent in English, Cantonese, and 
-                        Mandarin. I've helped many bridge and overcome the language barrier.
-                    </p>
-                    <p>
-                        With over five years of experience, I have serviced calls in 
-                        high-stress situations such as ongoing police responses and 
-                        medical emergencies, while also facilitating precise and 
-                        effective communication between client in various sectors such 
-                        as legal, medical, insurance, and goverment.
-                    </p>
-                </div>
-
-                <div class="navcontainer">
-                    <a class="button"
-                        href="" target="" style="display:none">
-                        Learn More
-                    <a>
-                </div>
-            </div>
-            
-            <div class="main">
-                <div class="textcontainer">
-                    <h1>Creative Writer</h1>
-                    <p>
-                        On the side, when I am not busy improving my coding, I enjoy 
-                        reading and creative writing.
-                    </p>
-                </div>
-                
-                <div class="navcontainer">
-                    <a class="button"
-                        href="" target="" style="display:none">
-                        Learn More
-                    <a>
-                </div>
-            </div>
-
-        </section>
-    
-        <section class="container" id="action">
-            <div class="main">
-                <div class="textcontainer">
-                    <h1>Want to Reach Out?</h1>
-                <p>
-                    If you like what you see and want to learn more about what I can do 
-                    for you, you can send me an email or visit any of my socials, you 
-                    can click on the buttons below.
-                </p>          
-                </div>
-                <div class="navcontainer">
-                    <a class="button"
-                        href="mailto:ben.liu.hwl@gmail.com">
-                        Send Email</a>
-                    <a class="button"
-                        href="https://github.com/benhwlcode" target="_blank" >
-                        GitHub</a>
-                    <a class="button"
-                        href="https://www.linkedin.com/in/hsuan-wei-liu-7a87032a8" target="_blank">
-                        LinkedIn</a>
-              
-                </div>
-            </div>
-        </section>
+    <main>
+      <section id="hero">
+        <img
+          src="media/hero-banner.jpg"
+          alt="A dark wooden desk with a notebook, pen, phone, and laptop."
+        />
+        <div id="hero-block">
+          <h1>Ben Liu's Portfolio</h1>
+          <p>
+            Full-stack developer with a strong foundation in C#, SQL, HTML5,
+            CSS, and JavaScript.
+          </p>
+        </div>
+      </section>
+      <section class="project">
+        <h2>Concert API</h2>
+        <p>
+          A RESTful API that retrieves data from a SQL server hosted on Azure.
+          The API includes health check, rate limiting, caching, and uses JWT
+          bearer tokens for authorization. A Blazor SSR web app calls into the
+          API and displays the data retrieved. The database publishing scripts
+          are also in the project.
+        </p>
+        <p>
+          The Blazor app uses pagination for larger data loads such as the call
+          to get every single performances. Please note that the authorization
+          call is for demonstration only. For those who want to use the API
+          themselves, the instructions can be found in the API GitHub repo.
+        </p>
+        <div class="proj-links">
+          <a
+            class="btn"
+            href="https://github.com/benhwlcode/HololiveConcertApiApp"
+            >API Repo</a
+          >
+          <a
+            class="btn"
+            href="https://github.com/benhwlcode/HololiveConcertBlazorApp"
+            >Blazor Repo</a
+          >
+          <a
+            class="btn"
+            href="https://hololiveconcertapiblazor-demo.azurewebsites.net/"
+            >Web App</a
+          >
+        </div>
+      </section>
+      <section class="project">
+        <h2>Social Work Internal Tool</h2>
+        <p>
+          A Winforms app that manages data in a local SQL server. This demo
+          project includes both custom data and input validations, and search
+          functions that allow users to construct complex SQL queries without
+          expert knowledge. The SQL database uses stored procedures to ensure
+          data integrity and resolve any errors such as duplicate or incomplete
+          data.
+        </p>
+        <p>
+          The CsvDataForm demonstrates importing dummy data acquired from Kaggle
+          and populates the database with around 700 entries. User friendly
+          implementations include auto-refresh of data-grids to ensure most up
+          to date information, instant visual feedback when user input is not
+          valid, and remembering filter checks for the current session.
+        </p>
+        <div class="proj-links">
+          <a class="btn" href="https://github.com/benhwlcode/WelfareApp"
+            >Project Repo</a
+          >
+        </div>
+      </section>
+      <section class="project">
+        <h2>Blogging Website</h2>
+        <p>
+          This is a demo website. It demonstrates proper meta and accessibility
+          tags, adhering to and improving SEO. Layout is auto-adjusted based on
+          screen width, and the content of the blog_essay page is modular and
+          loaded from JSON and txt files. There is also a print version.
+        </p>
+        <div class="proj-links">
+          <a class="btn" href="https://benhwliu.com/pages_blog/blog_index.html"
+            >Go to Site</a
+          >
+          <a
+            class="btn"
+            href="https://github.com/benhwlcode/benhwlcode.github.io/tree/main/pages_blog"
+            >Go to Repo Page</a
+          >
+        </div>
+      </section>
+      <section class="project">
+        <h2>Product Website</h2>
+        <p>
+          This is a demo website. The website is built with modular components
+          in JavaScript. It loads data from JSON files, or any database, and
+          able to construct page content accordingly, making it easier for the
+          page to display most up-to-date information.
+        </p>
+        <p>
+          The page also demonstrates common infographics for marketing, such as
+          testimonials, ratings, plan comparisons, product listing, etc, and how
+          each could load data and display the correct information. The page
+          also uses toastr to simulate capturing user input.
+        </p>
+        <div class="proj-links">
+          <a
+            class="btn"
+            href="https://benhwliu.com/pages_product/product_index.html"
+            >Go to Site</a
+          >
+          <a
+            class="btn"
+            href="https://github.com/benhwlcode/benhwlcode.github.io/tree/main/pages_product"
+            >Go to Repo Page</a
+          >
+        </div>
+      </section>
     </main>
-    <footer id="footer">
-        <section class="footnote">
-            <div class="linecontainer">
-                <p>Hsuan Wei Liu / Developer / ben.liu.hwl@gmail.com</p>
-            </div>
-        </section>
-    </footer>
+    <footer>&copy; <span id="copyright-year"></span> by Ben Liu</footer>
     <script src="script.js"></script>
-</body>
-
-
-
+    <script>
+      app.index();
+    </script>
+  </body>
 </html>
